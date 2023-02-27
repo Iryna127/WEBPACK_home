@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpack Boilerplate</title>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <script defer src="main.bundle.js"></script></head>
+  <body>
+    <div class="conteiner">
+      <div class="input-search">
+        <input
+          class="text"
+          id="nameOfCharacters"
+          placeholder="Seach"
+          type="text"
+        />
+      </div>
+      <div class="radio-group">
+        <button onclick="serchHerroHendler()" class="button__fetch" id="btnGo">
+          Go
+        </button>
+        <div id="radio-group-box" class="radio-group-box">
+          <input type="radio" name="status" value="alive" id="" />Alive
+          <input type="radio" name="status" value="dead" id="" />Dead
+          <input type="radio" name="status" value="unknown" id="" />Unknown
+        </div>
+      </div>
+      <div class="main">
+        <div class="main-left">
+          <div class="sel">
+            <div>Selected:</div>
+            <div id="selected"></div>
+          </div>
+          <div id="persons-list-wrapper">
+            <h1>The Rick and Morty API</h1>
+          </div>
+          <div class="buttons">
+            <button id="prev" onclick="handlePrev()">+</button>
+            <div id="counter" class="counter"></div>
+            <button id="next" onclick="nextPage()">></button>
+          </div>
+          <button onclick="returnAll()" class="button-return">RELOAD</button>
+        </div>
+
+        <div id="main-right" class="main-right">
+          <div class="info-block">
+            <div class="info-block__info">Info:</div>
+            <div id="img-conteiner" class="img-conteiner"></div>
+            <div id="info-block__selected"></div>
+            <div>
+              <button onclick="closePicture(event)" class="close">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  <script src="./js/script.js"></script> -->
+  </body>
+</html>
